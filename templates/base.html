@@ -42,9 +42,9 @@
         </h1>
         <nav id="nav">
             <ul>
-                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                <li class="current"><a href="/index.html">Welcome</a></li>
                 {% if DISPLAY_PAGES_ON_MENU %}
-                    {% for page in PAGES %}
+                    {% for page in pages %}
                         <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
                 {% endif %}
@@ -63,7 +63,10 @@
                         {% endfor %}
                     </ul>
                 </li>
+                <!--
                 <li><a href="{{ CONTACT_URL }}" class="button special">about</a></li>
+                -->
+
             </ul>
         </nav>
     </header>
