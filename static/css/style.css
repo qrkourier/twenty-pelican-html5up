@@ -1083,3 +1083,13 @@ div.content ol {
 			top:-10px;/*adjust thickness*/
 			border-top-color:#fff;/*Match background colour*/
 	}
+
+/* preformated code */
+	code {
+		font-family: "monospace";
+	  border: 1px solid #ccc;
+	  background-color: #f9f9f9;
+	  padding: 0px 3px;
+	  display: inline-block;
+	  margin: 0px;
+	}
