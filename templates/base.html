@@ -46,7 +46,9 @@
                 <li class="current"><a href="/index.html">Welcome</a></li>
                 {% if DISPLAY_PAGES_ON_MENU %}
                     {% for page in pages %}
+                      {% if not page.hide %}
                         <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                      {% endif %}
                     {% endfor %}
                 {% endif %}
                 {% for title, link in MENUITEMS %}
