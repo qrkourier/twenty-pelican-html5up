@@ -4,7 +4,9 @@
     <ul class="icons">
       {% for title, link in SOCIAL %}
         <li>
-          <a href="{{ link }}" class="icon circle fa fa-{{ title }}"><span class="label">{{ title }}</span></a>
+          <span class="icon circle">
+            <a href="{{ link }}" class="fab fa-{{ title }} fa-2x"><span class="label">{{ title }}</span></a>
+          </span>
         </li>
       {% endfor %}
     </ul>

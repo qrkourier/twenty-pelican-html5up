@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}{{ article.title|striptags }} | {{ super() }}{% endblock title %}
+{% block title %}{{ article.title|striptags|striptags|striptags }} | {{ super() }}{% endblock title %}
 
 {% block content %}
 <!-- Main -->
 <article id="main">
 
   <header class="special container">
-    <span class="icon fa-{{ article.icon|default("mobile") }}"></span>
+    <span class="icon">
+      <span class="{{ article.icon|default("fas fa-mobile") }} fa-5x"></span>
+    </span>
     <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
     <!-- add page sub title here -->
 

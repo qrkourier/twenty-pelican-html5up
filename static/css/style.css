@@ -41,7 +41,7 @@
 		-o-transition: all 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		color: #3fb1a3;
+		color: #007e6e;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -121,7 +121,7 @@
 		text-align: center;
 	}
 
-		header.special:before, header.special:after {
+		header.special::before, header.special::after {
 			border-bottom: solid 1.5px;
 			border-top: solid 1.5px;
 			content: '';
@@ -132,11 +132,11 @@
 			width: 43%;
 		}
 
-		header.special:before {
+		header.special::before {
 			left: 0;
 		}
 
-		header.special:after {
+		header.special::after {
 			right: 0;
 		}
 
@@ -159,7 +159,7 @@
 			width: 100%;
 		}
 
-			header.special .icon:before {
+			header.special .icon::before {
 				font-size: 3.5em;
 				opacity: 0.35;
 			}
@@ -244,7 +244,7 @@
 		position: relative;
 	}
 
-		.image:before {
+		.image::before {
 			background: url("images/overlay.png");
 			content: '';
 			height: 100%;
@@ -279,7 +279,7 @@
 		position: relative;
 	}
 
-		.icon:before {
+		.icon::before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
@@ -310,65 +310,65 @@
 				top: -0.2em;
 			}
 
-			.icon.circle.fa-twitter {
+			.icon.circle.fab.fa-twitter {
 				background: #70aecd;
 				color: white;
 			}
 
-				.icon.circle.fa-twitter:hover {
+				.icon.circle.fab.fa-twitter:hover {
 					background: #7fb7d2;
 				}
 
-			.icon.circle.fa-linkedin {
+			.icon.circle.fab.fa-linkedin {
 				background: #7490c3;
 				color: white;
 			}
 
-				.icon.circle.fa-linkedin:hover {
+				.icon.circle.fab.fa-linkedin:hover {
 					background: #829bc9;
 				}
 
-			.icon.circle.fa-google-plus {
+			.icon.circle.fab.fa-google-plus {
 				background: #db6b67;
 				color: white;
 			}
 
-				.icon.circle.fa-google-plus:hover {
+				.icon.circle.fab.fa-google-plus:hover {
 					background: #df7b77;
 				}
 
-			.icon.circle.fa-github {
+			.icon.circle.fab.fa-github {
 				background: #dcad8b;
 				color: white;
 			}
 
-				.icon.circle.fa-github:hover {
+				.icon.circle.fab.fa-github:hover {
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-bitbucket {
+			.icon.circle.fab.fa-bitbucket {
 				background: #da83ae;
 				color: white;
 			}
 
-				.icon.circle.fa-bitbucket:hover {
+				.icon.circle.fab.fa-bitbucket:hover {
 					background: #df93b8;
 				}
 
-		.icon.feature {
+		.icon, .feature {
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
-			opacity: 0.35;
+			opacity: 0.45;
 			text-align: center;
 		}
 
-			.icon.feature:before {
+			.icon.feature::before {
 				font-size: 5em;
 				line-height: 1em;
 			}
 
-		.icon > .label {
+		.icon .label {
 			display: none;
 		}
 
@@ -539,7 +539,7 @@ div.content ol {
 		}
 
 		.wrapper.style2 {
-			background-color: #6d005f;
+			background-color: #997394;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -634,16 +634,11 @@ div.content ol {
 					width: auto;
 				}
 
-				#header nav ul li.submenu > a:before {
+				#header nav ul li.submenu > a::before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
 					font-style: normal;
 					font-weight: normal;
-				}
-
-				#header nav ul li.submenu > a:before {
-					content: '\f107';
 					margin-right: 0.65em;
 				}
 
@@ -707,7 +702,7 @@ div.content ol {
 			margin-top: 1.5em;
 		}
 
-			.dropotron.level-0:before {
+			.dropotron.level-0::before {
 				border-bottom: solid 0.5em #fff;
 				border-left: solid 0.5em transparent;
 				border-right: solid 0.5em transparent;
@@ -893,7 +888,7 @@ div.content ol {
 		width: 100%;
 	}
 
-		#topButton .toggle:before {
+		#topButton .toggle::before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
@@ -901,7 +896,7 @@ div.content ol {
 			font-weight: normal;
 		}
 
-		#topButton .toggle:before {
+		#topButton .toggle::before {
 			color: white;
 			content: '\f039';
 			font-size: 0.75em;
@@ -915,7 +910,7 @@ div.content ol {
 			z-index: 1;
 		}
 
-		#topButton .toggle:after {
+		#topButton .toggle::after {
 			background: rgba(163, 169, 170, 0.75);
 			border-radius: 0 0 4px 4px;
 			content: '';
@@ -936,7 +931,7 @@ div.content ol {
 		width: 100%;
 	}
 
-		#sideButton .toggle:before {
+		#sideButton .toggle::before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
@@ -944,7 +939,7 @@ div.content ol {
 			font-weight: normal;
 		}
 
-		#sideButton .toggle:before {
+		#sideButton .toggle::before {
 			color: white;
 			content: '\f039';
 			font-size: 1em;
@@ -958,7 +953,7 @@ div.content ol {
 			z-index: 1;
 		}
 
-		#sideButton .toggle:after {
+		#sideButton .toggle::after {
 			background: rgba(163, 169, 170, 0.75);
 			border-radius: 2px;
 			content: '';
@@ -1067,15 +1062,15 @@ div.content ol {
 			display:block;
 			height:50px;/*height should be double border*/
 	}
-	.Chevron:before,
-	.Chevron:after{
+	.Chevron::before,
+	.Chevron::after{
 			position:absolute;
 			display:block;
 			content:"";
 			border:25px solid transparent;/*adjust size*/
 	}
 	/* Replace all text `top` below with left/right/bottom to rotate the chevron */
-	.Chevron:before{
+	.Chevron::before{
 			top:0;
 			border-top-color:#b00;/*Chevron Color*/
 	}

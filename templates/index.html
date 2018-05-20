@@ -42,28 +42,8 @@
 
   <!-- Two -->
   <section class="wrapper style1 container special">
-    <div class="row">
 
-      {% for article in articles_page.object_list %}
-      <div class="4u">
-
-        <section>
-          <span class="icon feature fa-{{ article.icon }}"></span>
-          <header>
-            <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'><h3>{{ article.title }}</h3></a>
-          </header>
-          <p>{{ article.content[:196]|striptags }}</p>
-          <footer>
-              <ul class="buttons">
-                  <li><a href="{{ SITEURL }}/{{ article.url }}" class="button small">Read More</a></li>
-              </ul>
-          </footer>
-        </section>
-
-      </div>
-      {% endfor %}
-
-    </div> <!-- /.row -->
+    {% include 'most_recent.html' %}
 
     {% include 'pagination.html' %}
 

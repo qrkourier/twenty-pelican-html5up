@@ -7,7 +7,9 @@
 <article id="main">
 
   <header class="special container">
-    <span class="icon fa-mobile"></span>
+    <span class="icon">
+      <span class="fas fa-mobile fa-5x"></span>
+    </span>
     <h2>{{ tag }}</h2>
     <!-- add page sub title here -->
     <p>Tag</p>
@@ -26,7 +28,7 @@
                         <header>
                             <a href="{{ SITEURL }}/{{ article.url }}"><h3>{{ article.title }}</h3></a>
                         </header>
-                        <p>{{ article.summary|striptags }}</p>
+                        <p>{{ article.summary|striptags|striptags|striptags }}</p>
                     </section>
                 {% endfor %}
                 </div>

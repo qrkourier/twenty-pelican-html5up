@@ -7,7 +7,7 @@
 <article id="main">
 
   <header class="special container">
-    <span class="icon fa-pencil"></span>
+    <span class="icon fas fa-pencil"></span>
     <h2>Archives</h2>
     <!-- add page sub title here -->
     <p>Archives Template</p>
@@ -26,7 +26,7 @@
                         <header>
                             <a href="{{ SITEURL }}/{{ article.url }}"><h3>{{ article.title }}</h3></a>
                         </header>
-                        <p>{{ article.summary|striptags }}</p>
+                        <p>{{ article.summary|striptags|striptags|striptags }}</p>
                     </section>
                 {% endfor %}
                 </div>

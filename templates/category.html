@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}{{ category|striptags }} | {{ super() }}{% endblock title %}
+{% block title %}{{ category|striptags|striptags|striptags }} | {{ super() }}{% endblock title %}
 
 {% block content %}
 <!-- Main -->
 <article id="main">
 
   <header class="special container">
-    <span class="icon fa-mobile"></span>
+    <span class="icon">
+      <span class="fas fa-desktop fa-5x"></span>
+    </span>
     <h2>{{ category }}</h2>
     <!-- add page sub title here -->
     <p><a href="{{ SITEURL }}/feeds/{{ category }}.atom.xml">Category feed</a></p>
@@ -26,7 +28,7 @@
                         <header>
                             <a href="{{ SITEURL }}/{{ article.url }}"><h3>{{ article.title }}</h3></a>
                         </header>
-                        <p>{{ article.summary|striptags }}</p>
+                        <p>{{ article.summary|striptags|striptags|striptags }}</p>
                     </section>
                 {% endfor %}
                 </div>
