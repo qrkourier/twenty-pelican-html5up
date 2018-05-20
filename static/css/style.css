@@ -282,7 +282,6 @@
 		.icon::before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 		}
@@ -889,17 +888,7 @@ div.content ol {
 	}
 
 		#topButton .toggle::before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-		}
-
-		#topButton .toggle::before {
 			color: white;
-			content: '\f039';
-			font-size: 0.75em;
 			height: 30px;
 			left: 0;
 			line-height: 30px;
@@ -927,22 +916,13 @@ div.content ol {
 		left: 0;
 		position: absolute;
 		text-align: center;
+		vertical-align: middle;
 		top: 0;
 		width: 100%;
 	}
 
 		#sideButton .toggle::before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-		}
-
-		#sideButton .toggle::before {
 			color: white;
-			content: '\f039';
-			font-size: 1em;
 			height: 40px;
 			left: 10px;
 			line-height: 40px;
@@ -1066,7 +1046,7 @@ div.content ol {
 	.Chevron::after{
 			position:absolute;
 			display:block;
-			content:"";
+			content: '';
 			border:25px solid transparent;/*adjust size*/
 	}
 	/* Replace all text `top` below with left/right/bottom to rotate the chevron */
