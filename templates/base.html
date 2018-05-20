@@ -52,12 +52,10 @@
                     {% endfor %}
                 {% endif %}
                 {% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
+                <li><a href="{{ link }}">{{ title }}</a></li>
                 {% endfor %}
                 <li class="submenu">
-                  <span class="fas fa-angle-down">
-                    <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">blog</a>
-                  </span>
+                    <span class="fas fa-angle-down"></span><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">blog</a>
                     <ul>
                         {% for cat, null in categories %}
                             {% if cat != 'blog' %}
